@@ -44,8 +44,11 @@ public class Main {
         System.out.println("\nNodos por nivel (BFS):");
         System.out.println(miTrie.nodesByLevel());
 
-        System.out.println("\n--- 5. Probando Prefijos ---");
+        System.out.println("\n--- 5. Probando Prefijos (PreOrder) ---");
         System.out.println("¿Inicia con 'pal'?: " + miTrie.startsWith("pal")); // true
         System.out.println("¿Inicia con 'per'?: " + miTrie.startsWith("per")); // false
+
+        System.out.println("\n--- 6. Probando PostOrder ---");
+        System.out.println("PostOrder: " + miTrie.treeTraversal());
     }
 }
