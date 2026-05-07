@@ -204,9 +204,9 @@ public class Trie {
         }
     }
 
-    //Apatado de un video
+    //Adaptado de un video
     private boolean searchRecursive(Node current, String word, int index){
-        //Si llegamos al final de la palapra, verificamos si es valida
+        //Si llegamos al final de la palabra, verificamos si es valida
         if(index == word.length()) return current.isLast;
 
         char c = word.charAt(index);
@@ -255,7 +255,7 @@ public class Trie {
         }
     }
 
-    //Creamos un record para guardar las frequencuias de las palabras
+    //Creamos un record para guardar las frecuencias de las palabras
     private static class WordStats{
         String word;
         int frequency;
